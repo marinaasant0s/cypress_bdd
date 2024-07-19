@@ -8,7 +8,7 @@ const { createEsbuildPlugin } = require("@badeball/cypress-cucumber-preprocessor
 module.exports = defineConfig({
   e2e: {
     baseUrl:'https://www.automationpratice.com.br/',
-    specPattern: "**/*.feature", //pesquisar em todo projeto os arquivos .fetarure, onde estão os testes, é isso que vai ser executado.
+    specPattern: "**/*.feature", //pesquisar em todo projeto os arquivos .feature, onde estão os testes, é isso que vai ser executado.
     setupNodeEvents(on, config) {
       addCucumberPreprocessorPlugin(on, config);
 
